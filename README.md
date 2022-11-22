@@ -6,9 +6,8 @@ While LXQt does not explicitly depend on Openbox, most distros ship it by defaul
 
 Adwaita LXQt theme and palette with (what else?) Adwaita icon set and Adwaita morning-mode wallpaper, with Fusion Qt widget style and Adwaita-LXQt Openbox theme
 
-![Adwaita-LXQt](https://user-images.githubusercontent.com/67122280/203226693-773faa21-0125-461a-82bd-ac7708843b5b.jpg)
-
+![Adwaita-LXQt](https://user-images.githubusercontent.com/67122280/203227641-7a517cf0-d89e-4e77-8657-0a2788894e64.jpg)
 
 Adwaita-Dark LXQt theme and palette with Adwaita icon set, Adwaita night-mode wallpaper, Plastik Qt widget style and Adwaita-LXQt-Dark Openbox theme
 
-![Adwaita-Dark-LXQt](https://user-images.githubusercontent.com/67122280/203226713-bcc4bb4e-8d29-439d-89a9-26abbd136ba5.jpg)
+![Adwaita-Dark-LXQt](https://user-images.githubusercontent.com/67122280/203227664-5a8587d2-089f-4e3c-b180-029ec7b6612c.jpg)
