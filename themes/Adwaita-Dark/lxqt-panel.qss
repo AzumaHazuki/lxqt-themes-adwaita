@@ -1,0 +1,303 @@
+/*
+"Adwaita-Dark" LXQt theme
+By Azuma Hazuki (wanderinghazuki@gmail.com)
+Created 23 December 2022
+*/
+
+/* Panel and general plugins' settings */
+LXQtPanel, LXQtPanel Plugin, LXQtPanel #BackgroundWidget {
+        color:                          #ffffff;
+        background:                     #353535;
+}
+
+Plugin, Plugin > QToolButton, Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton {
+        color:                          #ffffff;
+        background:                     #353535;
+
+	/* prevents unexpected borders/boxes on hover */
+	border:				0px solid transparent;
+}
+
+/* One-liners for the Caps/Num/Scroll indicators */
+#KbIndicator > QLabel:enabled {font: bold;}
+#KbIndicator > QLabel:disabled {font: normal;}
+
+/* General menu settings */
+QMenu {
+	color:				#ffffff;
+	background:			#353535;
+
+	min-width:			100px;
+}
+
+QMenu::icon {
+	color:				#ffffff;
+	background:			transparent;
+
+	padding-left:			3px;
+}
+
+QMenu::item
+{
+	color:				#ffffff;
+	background:			#353535;
+
+	padding-left:			8px;
+	padding-right:			12px;
+	padding-top:			5px;
+	padding-bottom:			5px;
+}
+
+QMenu::item:selected
+{
+	color:				#ffffff;
+	background:			#3584e4;
+}
+
+QMenu::item:disabled {
+	color:				#a0a0a0;
+	background:			#353535;
+}
+
+QMenu::indicator {
+	width:				14px;
+	height:				14px;
+	background:			transparent;
+	padding-left:			3px;
+}
+
+QMenu::indicator:non-exclusive:checked { image:	url(checked.svg);}
+QMenu::indicator:non-exclusive:checked:selected { image: url(checked-selected.svg); }
+QMenu::indicator:non-exclusive:unchecked { image: url(unchecked.svg);}
+QMenu::indicator:non-exclusive:unchecked:selected { image: url(unchecked-selected.svg);}
+
+QMenu QToolButton {
+	color:				#ffffff;
+	background:			#1b1b1b;
+
+	font:				bold;
+
+	padding:			3px;
+	border:				none;
+}
+
+/* Main menu icon and search settings */
+#MainMenu {
+	color:				#ffffff;
+	background:			#353535;
+
+        qproperty-icon:                 url(mainmenu.svg);
+
+	padding-left:			4px;
+	padding-right:			2px;
+	padding-top:			2px;
+	padding-bottom:			2px;
+
+	margin-right:			-6px;
+}
+
+#MainMenu:pressed, #MainMenu:hover {
+	color:				#ffffff;
+	background:			#353535;
+}
+
+#MainMenu QLineEdit {
+	color:				#ffffff;
+	background:			#000000;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#15539e;
+
+	padding:			4px;
+
+	margin:				2px;
+
+	border:				1px solid #1b1b1b;
+	border-radius:			4px;
+}
+
+#MainMenu QMenu::icon
+{
+	padding-right:			3px;
+}
+
+#MainMenu QMenu::icon:selected
+{
+	padding-right:			3px;
+}
+
+#MainMenu QMenu::item
+{
+	padding-left:			8px;
+	padding-right:			12px;
+	padding-top:			6px;
+	padding-bottom:			6px;
+}
+
+#MainMenu QMenu::item:selected
+{
+	background:			#3584e4;
+	color:				#ffffff;
+}
+
+#MainMenu ActionView {
+	color:				#ffffff;
+	background:			#353535;
+
+	min-width:			100px;
+}
+
+#MainMenu ActionView::item {
+	color:				#ffffff;
+	background:			#353535;
+
+	padding-left:			8px;
+	padding-right:			12px;
+	padding-top:			5px;
+	padding-bottom:			5px;
+}
+
+#MainMenu ActionView::item:hover,
+#MainMenu ActionView::item:selected,
+#MainMenu ActionView::item:selected:hover {
+	color:				#ffffff;
+	background:			#3584e4;
+}
+
+/* Taskbar and Desktop Switcher; these use the same theming, so define them together */
+#TaskBar, 
+#DesktopSwitch {
+	color:				#ffffff;
+	background:			#353535;
+
+	padding:			0px;
+	margin:				0px;
+}
+
+#TaskBar QToolButton, 
+#DesktopSwitch QToolButton {
+	color:				#ffffff;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #393939, stop:0.05 #353535, stop:1.0 #323232);
+
+	padding:			4px;
+
+        border-top:			1px solid #1b1b1b;
+        border-bottom:			1px solid #070707;
+        border-left:			1px solid #1b1b1b;
+        border-right:			1px solid #1b1b1b;
+
+	border-radius:			4px;
+}
+
+#TaskBar QToolButton:on,
+#DesktopSwitch QToolButton:on {
+	color:				#ffffff;
+	background:			#1e1e1e;
+
+	border:				1px solid #1b1b1b;
+}
+
+#TaskBar QToolButton:hover,
+#TaskBar QToolButton:on:hover,
+#DesktopSwitch QToolButton:hover,
+#DesktopSwitch QToolButton:on:hover {
+	color:				#ffffff;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3b3b3b, stop: 0.05 #373737, stop:1.0 #353535);
+
+	border:				1px solid #1b1b1b;
+}
+
+#TaskBar QToolButton:pressed,
+#TaskBar QToolButton[urgent="true"],
+#TaskBar QToolButton[urgent="true"]:hover,
+#DesktopSwitch QToolButton:pressed,
+#DesktopSwitch QToolButton[urgent="true"],
+#DesktopSwitch QToolButton[urgent="true"]:hover {
+	color:				#ffffff;
+	background:			#1e1e1e;
+
+	border:				1px solid #1b1b1b;
+}
+
+/* QuickLaunch (item icons) bar */
+#QuickLaunch,
+#QuickLaunchPlaceHolder {
+        color:                          #ffffff;
+        background:                     #353535;
+}
+
+#QuickLaunch QToolButton {
+        color:                          #ffffff;
+        background:                     #353535;
+
+        margin:				2px;
+}
+
+/* Clock plugin */
+#WorldClock, #WorldClockContent {
+	color:				#ffffff;
+	background:			#353535;
+}
+
+/* Plugin settings - systray and applets, which may reside inside or outside */
+#StatusNotifier {
+	color:				#ffffff;
+	background:			#353535;
+
+	min-width:			0px;
+	min-height:			20px;
+
+	padding:			2px;
+}
+
+/* Hard-coded colors for the CPU and system resource graph plugins */
+#CpuLoadPlugin, #SysStatPlugin {
+        min-width:                      32px;
+        min-height:                     16px;
+
+        color:                          #ffffff;
+        background:                     #000000;
+
+        border:				1px solid #1b1b1b;
+}
+
+#LXQtCpuLoad, #SysStat {
+        color:                          #00ff00;
+        background:                     #000000;
+
+        qproperty-fontColor:            #00ff00;
+
+        padding:                        2px;
+}
+
+#SysStat > QLabel {
+        color:                          #ffffff;
+        background:                     #353535;
+}
+
+#SysStat_Graph {
+	color:				#00ff00;
+        background:                     #000000;
+
+        qproperty-gridColor:            rgba(0, 255, 0, 25%);
+        qproperty-titleColor:           rgba(255, 255, 255, 75%);
+
+        qproperty-cpuSystemColor:       #ffffff;
+        qproperty-cpuUserColor:         #00ff00;
+        qproperty-cpuNiceColor:         #ffffff;
+        qproperty-cpuOtherColor:        #ffffff;
+        qproperty-frequencyColor:       rgba(0, 255, 0, 25%);
+
+        qproperty-memAppsColor:         #00ff00;
+        qproperty-memBuffersColor:      #ffffff;
+        qproperty-memCachedColor:       #008000;
+
+        qproperty-swapUsedColor:        #ffffff;
+
+        qproperty-netReceivedColor:     #00ff00;
+        qproperty-netTransmittedColor:  #ffffff;
+}
+
+/* Sensors plugin theming appears not to work yet...*/
+/* WingMenu plugin theming appears not to work yet...*/
