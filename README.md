@@ -4,6 +4,8 @@ This repository houses the Adwaita and Adwaita-Dark themes for LXQt, along with 
 
 While LXQt does not explicitly depend on Openbox, most distros ship it by default and the vast majority of LXQt desktops on X11/Xorg will be running it. Therefore, it is recommended to download and install the Openbox themes to ~/.themes (or /usr/share/themes if root and you want all users to have access) as this provides the most complete possible look.
 
-Screenshots below, including the as-yet-unmainlined Wing Menu panel plugin!
-![Adwaita-LXQt](https://user-images.githubusercontent.com/67122280/212570074-687df5b2-2ccf-4db9-b973-ac902a7c8224.png)
-![Adwaita-LXQt-Dark](https://user-images.githubusercontent.com/67122280/212570075-8551a784-fe4b-4c40-aa1a-df6d4e9769d3.png)
+Adwaita
+![Adwaita-LXQt](https://user-images.githubusercontent.com/67122280/226072366-49fd38d1-76fc-4198-8537-762370a18cf8.png)
+
+Adwaita-Dark
+![Adwaita-Dark-LXQt](https://user-images.githubusercontent.com/67122280/226072385-ca86ce4b-701a-4ec1-83ad-5cd563b946a2.png)
